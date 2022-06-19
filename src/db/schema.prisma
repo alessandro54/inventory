@@ -11,10 +11,13 @@ datasource db {
 }
 
 model User {
-  id        String   @id @default(cuid())
-  username  String   @unique
-  email     String?  @unique
-  password  String
+  id        String  @id @default(cuid())
+  username  String  @unique @db.VarChar(20)
+  email     String? @unique @db.VarChar(30)
+  firstName String? @db.VarChar(50)
+  lastName  String? @db.VarChar(50)
+  password  String  @db.VarChar(30)
+
   active    Boolean  @default(true)
   updatedAt DateTime @updatedAt
   createdAt DateTime @default(now())
