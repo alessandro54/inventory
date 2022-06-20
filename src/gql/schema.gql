@@ -9,8 +9,11 @@ type User {
   """Username of the user"""
   username: String!
 
+  """First name of the user"""
+  firstName: String
+
   """Email of the user"""
-  email: String!
+  email: String
 }
 
 type Query {

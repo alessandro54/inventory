@@ -8,6 +8,12 @@ export class User {
   @Field(() => String, { description: 'Username of the user' })
   username: string;
 
-  @Field(() => String, { description: 'Email of the user' })
+  @Field(() => String, {
+    description: 'First name of the user',
+    nullable: true,
+  })
+  firstName: string;
+
+  @Field(() => String, { description: 'Email of the user', nullable: true })
   email: string;
 }
