@@ -1,0 +1,8 @@
+{% extends "layouts/application" %}
+
+
+{% block content %}
+
+<h1 class="text-rose-100"> Hello World {{ items }} </h1>
+
+{% endblock content %}

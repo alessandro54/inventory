@@ -1,2 +1,2 @@
-pub mod hello_controller;
+pub mod root_controller;
 pub mod items_controller;
