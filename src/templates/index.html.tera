@@ -1,6 +1,5 @@
 {% extends "layouts/public" %}
 
-
 {% block content %}
 
 {% endblock content %}
