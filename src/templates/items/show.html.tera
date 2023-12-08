@@ -3,6 +3,6 @@
 
 {% block content %}
 
-<h1 class="text-rose-500"> Hello World {{ items }} </h1>
+<h1 class="text-rose-500"> Hello World {{ item }} </h1>
 
 {% endblock content %}
